@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>res=$(CocoaDialog inputbox --title "Run request" \
+    --informative-text "Request to run:" \
+    --button1 "Run" --button2 "Cancel")
+
+[[ $(head -n1 &lt;&lt;&lt;"$res") == "2" ]] &amp;&amp; exit_discard
+
+res=$(tail -n1 &lt;&lt;&lt;"$res")
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+
+html_header "fort $res" "Running Fortissimo request $res"
+echo '&lt;pre&gt;'
+$TM_PROJECT_DIRECTORY/fort --explain --base $TM_PROJECT_DIRECTORY $res 2&gt;&amp;1
+echo "&lt;/pre&gt;"
+html_footer</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@U</string>
+	<key>name</key>
+	<string>fort explain</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>uuid</key>
+	<string>F9C2C1E2-7E31-45C6-912B-2BD15CF65A25</string>
+</dict>
+</plist>

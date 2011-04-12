@@ -1,0 +1,27 @@
+<?php
+/** @file
+ *
+ * ${FORTISSIMO_CLASS} is a BaseFortissimoCommand class.
+ *
+ * Created by ${TM_FULLNAME} on ${TM_DATE}.
+ */
+
+/**
+ * A Fortissimo command.
+ *
+ * @author ${TM_FULLNAME}
+ */
+class ${FORTISSIMO_CLASS} extends FortissimoLogger {
+
+  public function init() {
+
+  }
+
+  public function log($msg, $category, $details) {
+
+  }
+
+
+  // Used for loggers that return buffered messages.
+  // public function getMessages() { return array(); }
+}

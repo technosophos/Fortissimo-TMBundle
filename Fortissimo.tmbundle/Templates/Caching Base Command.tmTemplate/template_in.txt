@@ -1,0 +1,65 @@
+<?php
+/** @file
+ *
+ * ${FORTISSIMO_CLASS} is a BaseFortissimoCommand class.
+ *
+ * Created by ${TM_FULLNAME} on ${TM_DATE}.
+ */
+
+/**
+ * A Fortissimo command.
+ *
+ * @author ${TM_FULLNAME}
+ */
+class ${FORTISSIMO_CLASS} extends BaseFortissimoCommand {
+
+  public function expects() {
+    return $this
+      ->description('')
+      //->usesParam('name', 'desc')
+      //->withFilter('string')
+      //->whichIsRequired()
+      //->whichHasDefault('some value')
+      ->andReturns('')
+    ;
+  }
+
+  public function doCommand() {
+
+    // $myParam = $this->param('myParam', 'Default value');
+    // $myCxt = $this->context('myContext', 'Default value');
+
+
+    // return $result; // Insert into Context.
+  }
+
+  // ==========================
+  //  Cacheable implementation
+  // Note that you need to add the appropriate info to
+  // expects in order to pass information.
+  // ==========================
+
+  // NOTICE: This is stupidly simple. Do something more
+  // complex.
+  public function cacheKey() {
+    $param = $this->param('cacheKey', NULL);
+
+    if (is_null($param)) return;
+
+    // Class name is a relatively safe prefix.
+    return $this->name . '-' . $param;
+  }
+
+  public function cacheLifetime() {
+    return $this->param('cacheLifetime', 1800);
+  }
+
+  public function cacheBackend() {
+    return $this->param('cacheBackend', NULL);
+  }
+  
+  public function isCaching() {
+    return $this->param('caching', TRUE);
+  }
+}
+

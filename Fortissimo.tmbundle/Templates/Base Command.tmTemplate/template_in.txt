@@ -1,0 +1,36 @@
+<?php
+/** @file
+ *
+ * ${FORTISSIMO_CLASS} is a BaseFortissimoCommand class.
+ *
+ * Created by ${TM_FULLNAME} on ${TM_DATE}.
+ */
+
+/**
+ * A Fortissimo command.
+ *
+ * @author ${TM_FULLNAME}
+ */
+class ${FORTISSIMO_CLASS} extends BaseFortissimoCommand {
+
+  public function expects() {
+    return $this
+      ->description('')
+      //->usesParam('name', 'desc')
+      //->withFilter('string')
+      //->whichIsRequired()
+      //->whichHasDefault('some value')
+      ->andReturns('')
+    ;
+  }
+
+  public function doCommand() {
+
+    // $myParam = $this->param('myParam', 'Default value');
+    // $myCxt = $this->context('myContext', 'Default value');
+
+
+    // return $result; // Insert into Context.
+  }
+}
+

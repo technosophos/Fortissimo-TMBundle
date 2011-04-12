@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>-&gt;doesCommand('${1:commandName}')$0</string>
+	<key>name</key>
+	<string>doesCommand</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>-&gt;doesCommand</string>
+	<key>uuid</key>
+	<string>8AF20EAA-1353-4FAC-A5E7-C806143894BF</string>
+</dict>
+</plist>

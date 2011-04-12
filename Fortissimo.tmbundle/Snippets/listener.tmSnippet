@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Config::listener('${1:class}', '${2:eventName}', '${3:callable}');$0</string>
+	<key>name</key>
+	<string>listener</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>Config::</string>
+	<key>uuid</key>
+	<string>75C75954-787A-4392-801C-64739331ED61</string>
+</dict>
+</plist>
