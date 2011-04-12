@@ -8,4 +8,4 @@ Copy or symbolically link `Fortissimo-TMBundle/Fortissimo.tmbundle` into your `~
 
 ## About Fortissimo
 
-Fortissimo is a PHP framework. [Learn More](http://github.com/technosophos/Fortissimor)
+Fortissimo is a PHP framework. [Learn More](http://github.com/technosophos/Fortissimo)
