@@ -1,0 +1,21 @@
+<?php
+/** @file
+ *
+ * Defines the class ${FORTISSIMO_CLASS}.
+ *
+ * Created by ${TM_FULLNAME} on ${TM_DATE}.
+ */
+
+/**
+ * Defines ${FORTISSIMO_CLASS}.
+ */
+class ${FORTISSIMO_CLASS} {
+  
+  /**
+   * Construct a new ${FORTISSIMO_CLASS}.
+   */
+  public function __construct() {
+    
+  }
+  
+}
