@@ -1,0 +1,37 @@
+<?php
+/** @file
+ *
+ * Defines the class ${FORTISSIMO_CLASS}.
+ *
+ * Created by ${TM_FULLNAME} on ${TM_DATE}.
+ */
+
+/**
+ * Defines ${FORTISSIMO_CLASS}.
+ */
+class ${FORTISSIMO_CLASS} extends BaseThemePackage {
+  
+  public function templates() {
+    return array(
+      //'target' => 'path/to/template.tpl.php',
+    );
+  }
+  
+  public function functions() {
+    return array(
+      //'target' => callback,
+    );
+  }
+  
+  public function preprocessors() {
+    return array(
+      // 'target' => preprocessor_callback
+    );
+  }
+  
+  public function postprocessors() {
+    return array(
+      //'target' => postprocessor_callback,
+    );
+  }
+}
